@@ -88,7 +88,7 @@ export default function App() {
     setDiagnosticRun(null);
 
     try {
-      const apiResponse = await fetch('https://stroke-risk-prediction-8wh3.onrender.com/api/predict', {
+      const apiResponse = await fetch('https://stroke-risk-prediction-8wh3.onrender.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
